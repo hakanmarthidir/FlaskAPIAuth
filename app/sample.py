@@ -6,3 +6,8 @@ from app.auth import login_required
 @login_required
 def accesswithtoken():
     return "Im Login Required!"
+
+
+@api.route("/hello")
+def hello():
+    return "Public"
